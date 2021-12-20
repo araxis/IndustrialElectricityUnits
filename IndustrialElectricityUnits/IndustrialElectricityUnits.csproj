@@ -5,16 +5,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>Meisam Alifallahi</Authors>
-    <PackageIcon>meter.png</PackageIcon>
+    <PackageIcon>arax2.png</PackageIcon>
     <Copyright>Copyright Meisam Alifallahi</Copyright>
+    <PackageProjectUrl>https://github.com/araxis/IndustrialElectricityUnits</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/araxis/IndustrialElectricityUnits</RepositoryUrl>
+    <PackageTags>Industrial;Electricity;Measuring;Unit</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" Version="3.3.0" />
+    <PackageReference Include="Ardalis.SmartEnum" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="meter.png">
+    <None Update="arax2.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
