@@ -19,4 +19,6 @@ public class CosPhiTests
         var construct = () => new CosPhi(2);
         construct.Should().Throw<ArgumentException>();
     }
+
+
 }
