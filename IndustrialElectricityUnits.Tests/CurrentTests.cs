@@ -10,6 +10,7 @@ public class CurrentTests
     [Fact]
     public void NotAllowNegativeValueInAmpere()
     {
+
         var construct = () => new Ampere(-1);
 
         construct.Should().Throw<ArgumentException>();
@@ -19,7 +20,7 @@ public class CurrentTests
     public void SumOfTwoCurrentReturnResultInAmpere()
     {
         double expectedResultValue = 100;
-        
+
         var currentA = 40.A();
         var currentB = 60.A();
 

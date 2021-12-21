@@ -19,4 +19,13 @@ public class EfficiencyTests
         var construct = () => new Efficiency(150);
         construct.Should().Throw<ArgumentException>();
     }
+
+    [Fact]
+    public void EfficiencyValueIsInPercentage()
+    {
+        var efficiency =new Efficiency(70);
+        var expectedValue = 0.7;
+
+        efficiency.Value.Should().Be(expectedValue);
+    }
 }

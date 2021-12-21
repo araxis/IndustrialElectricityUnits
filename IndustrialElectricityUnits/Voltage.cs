@@ -10,9 +10,7 @@ public record Voltage
     {
         _value = ValueValidation(value,nameof(value));
     }
-
-  
-
+    
     public double Value
     {
         get => _value;

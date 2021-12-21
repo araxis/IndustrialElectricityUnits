@@ -14,7 +14,7 @@ public record Efficiency
 
     public double Value
     {
-        get => _value;
+        get => _value/100;
         init => _value =  ValidateValue(value, nameof(Value));
     }
 
@@ -24,6 +24,6 @@ public record Efficiency
     }
 
     public static implicit operator Efficiency(double value) => new (value);
-    public static implicit operator double(Efficiency value) => value.Value;
+    public static implicit operator double(Efficiency value) => value.Value/100;
    
 }
