@@ -24,6 +24,6 @@ public record Efficiency
     }
 
     public static implicit operator Efficiency(double value) => new (value);
-    public static implicit operator double(Efficiency value) => value.Value/100;
+    public static implicit operator double(Efficiency value) => value.Value;
    
 }
