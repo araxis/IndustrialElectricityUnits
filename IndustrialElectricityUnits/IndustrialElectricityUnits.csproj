@@ -5,20 +5,27 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>Meisam Alifallahi</Authors>
-    <PackageIcon>arax2.png</PackageIcon>
     <Copyright>Copyright Meisam Alifallahi</Copyright>
     <PackageProjectUrl>https://github.com/araxis/IndustrialElectricityUnits</PackageProjectUrl>
     <RepositoryUrl>https://github.com/araxis/IndustrialElectricityUnits</RepositoryUrl>
     <PackageTags>Industrial;Electricity;Measuring;Unit</PackageTags>
+    <Description>set of electricity parameters such as Power, Current, Reactive power, Cos𝛟, ..., and related operators.</Description>
+    <PackageId>Arax.Electricity.Parameters</PackageId>
+    <PackageIcon>logo_Arax.png</PackageIcon>
+    <Version>$(VersionPrefix)</Version>
   </PropertyGroup>
+
+
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" Version="3.3.0" />
     <PackageReference Include="Ardalis.SmartEnum" Version="2.0.1" />
   </ItemGroup>
 
+
+
   <ItemGroup>
-    <None Update="arax2.png">
+    <None Update="logo_Arax.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

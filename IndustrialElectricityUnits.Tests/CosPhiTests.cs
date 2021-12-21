@@ -9,6 +9,7 @@ public class CosPhiTests
     [Fact]
     public void NotAllowValueLeesThanZero()
     {
+        
         var cosPhi = () => new CosPhi(-1);
         cosPhi.Should().Throw<ArgumentException>();
     }

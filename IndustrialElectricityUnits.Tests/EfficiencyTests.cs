@@ -16,7 +16,7 @@ public class EfficiencyTests
     [Fact]
     public void NotAllowValueGreaterThan_100()
     {
-        var construct = () => new CosPhi(150);
+        var construct = () => new Efficiency(150);
         construct.Should().Throw<ArgumentException>();
     }
 }

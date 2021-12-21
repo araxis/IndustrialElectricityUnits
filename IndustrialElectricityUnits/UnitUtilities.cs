@@ -3,8 +3,8 @@
 public static class UnitUtilities
 {
 
-    public static Watt W(this int value) => new Watt(value);
-    public static Watt W(this double value) => new Watt(value);
+    public static Watt W(this int value) => new(value);
+    public static Watt W(this double value) => new (value);
     public static Power Kw(this double value) => new KiloWatt(value);
     public static Power Kw(this int value) => new KiloWatt(value);
     public static Voltage V(this int value) => new(value);
@@ -18,8 +18,6 @@ public static class UnitUtilities
 
     public static VoltAmpere VA(this int value) => new(value);
     public static VoltAmpere VA(this double value) => new (value);
-    public static VoltAmpere ToVA(this ApparentPower value) => value.ToVA();
-
     public static VoltAmpereReactive VAr(this int value) => new(value);
     public static VoltAmpereReactive VAr(this double value) => new (value);
     public static VoltAmpereReactive ToVAr(this ReactivePower value) => value.ToVAr();
