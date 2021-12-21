@@ -65,7 +65,7 @@ Or via the .NET Core command line interface:
      var efficiency2=87.Ef();
      Efficiency efficiency3 = 87;
     
-    //to simplified usage, Value property return input/100;
+    //to simplify usage, Value property return input/100;
     var value1 = efficiency1.Value; 
     double value2 = efficiency;
     //value is 0.87;
