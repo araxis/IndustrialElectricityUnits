@@ -17,6 +17,8 @@ Or via the .NET Core command line interface:
     dotnet add package Arax.Electricity.Parameters
     
 ## Parameters
+* CosPhi 
+* Efficiency
 * Current (A)
 * Power (W,kW,HP)
 * Apparent Power (VA,kVA)
