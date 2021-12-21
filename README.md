@@ -35,7 +35,7 @@ Or via the .NET Core command line interface:
     // and simple call 
     var current = CalcCurrent(2.Kw(), 415, .89 , 90);
  
- ```csharp
+ ```
 # Parameters
 * CosPhi
 * Efficiency
