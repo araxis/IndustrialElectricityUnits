@@ -22,7 +22,7 @@ Or via the .NET Core command line interface:
 
 > current in ampere = (Watt / Voltage x CosPhi x Efficiency x 1.73)
 
-```
+```csharp
    //very similar to the real formula
    public Current CalcCurrent(Power power,Voltage voltage, CosPhi cosPhi,Efficiency efficiency)
     {
@@ -35,7 +35,7 @@ Or via the .NET Core command line interface:
     // and simple call 
     var current = CalcCurrent(2.Kw(), 415, .89 , 90);
  
- ```
+ ```csharp
 # Parameters
 * CosPhi
 * Efficiency
@@ -50,7 +50,7 @@ Or via the .NET Core command line interface:
 
 
 ### Power factor (value 0-1)
-```
+```csharp
      var cosPhi1 = new CosPhi(.7);
      var cosPhi2 = .7.Pf();
      CosPhi cosPhi3 = .7;
@@ -60,7 +60,7 @@ Or via the .NET Core command line interface:
      double value2 = cosPhi1;
 ```
  ### Efficiency (value 0-1)
-```
+```csharp
      var efficiency1 =  new Efficiency(87);
      var efficiency2=87.Ef();
      Efficiency efficiency3 = 87;
@@ -71,7 +71,7 @@ Or via the .NET Core command line interface:
     //value is 0.87;
 ```
  ### Voltage (value > 0)
-```
+```csharp
      var voltage1 =  new Voltage(415);
      Voltage voltage2 = 415;
      var voltage3 = 415.V();   
@@ -81,7 +81,7 @@ Or via the .NET Core command line interface:
     double value2 = voltage1
 ```
 ### Current (value >= 0)
-```
+```csharp
 
      Current ampere =  new Ampere(1);
      Ampere ampere2 = 2;
@@ -94,7 +94,7 @@ Or via the .NET Core command line interface:
     string unit = ampere.Unit; //"A"
 ```
  ### Power (value >= 0)
-```
+```csharp
      Power power1 =  new Watt(1);
      Power power2 =  new KiloWatt(1);
      Power power3 = new HorsePower(1)
@@ -110,7 +110,7 @@ Or via the .NET Core command line interface:
     string unit = power1.Unit;
 ```
 ### Apparent power (value >= 0)
-```
+```csharp
  
      ApparentPower power1 =  new VoltAmpere(1);
      ApparentPower power2 =  new KiloVoltAmpere(1);
@@ -124,7 +124,7 @@ Or via the .NET Core command line interface:
     string unit = power1.Unit;
 ```
  ### Reactive power (value >= 0)
-```
+```csharp
      ReactivePower power1 =  new VoltAmpereReactive(1);
      ReactivePower power2 =  new KiloVoltAmpereReactive(1);
      var power3 = 1.VAr();
@@ -137,7 +137,7 @@ Or via the .NET Core command line interface:
     string unit = power1.Unit;
 ```
 ### Circuit Breaker Type
-```
+```csharp
  var tmb = CircuitBreakerType.Tmb;
  var mccb = CircuitBreakerType.Mccb;
  var acb = CircuitBreakerType.Acb;
@@ -149,8 +149,7 @@ Or via the .NET Core command line interface:
 ```
 
 ### Start mode
-
-```
+```csharp
  var dol = StartMode.Dol;
  var sd = StartMode.Sd;
  var ssd = StartMode.Ssd;
@@ -161,8 +160,7 @@ Or via the .NET Core command line interface:
  string description =dol.Description; // "Direct Online"
 ```
 ### Power System
-
-```
+```csharp
  var singlePhase = PowerSystem.SinglePhase;
  var twoPhase = PowerSystem.TwoPhase;
  var threePhase = PowerSystem.ThreePhase;
