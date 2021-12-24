@@ -25,6 +25,8 @@ public abstract record Power
     public static bool operator < (Power left, Power right) => left.ToWatt().Value < right.ToWatt().Value;
     public static bool operator <= (Power left, Power right) => left.ToWatt().Value <= right.ToWatt().Value;
     public static Watt operator + (Power left, Power right) => new(left.ToWatt().Value + right.ToWatt().Value);
+
+    public static Power operator ^(Power power, double pow) => power with{Value = Math.Pow(power.Value,pow)};
     
  
 }
