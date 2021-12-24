@@ -18,7 +18,7 @@ public record CosPhi
     }
 
     public double Phi => Math.Acos(_value);
-    public double SinPhi => Math.Sign(Phi);
+    public double SinPhi => Math.Sin(Phi);
     public double TanPhi => Math.Tan(Phi);
 
     private double ValidateValue(double value,string paramName)
