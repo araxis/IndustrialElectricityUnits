@@ -18,8 +18,14 @@ public static class UnitUtilities
 
     public static VoltAmpere VA(this int value) => new(value);
     public static VoltAmpere VA(this double value) => new (value);
+    public static KiloVoltAmpere KVA(this int value) => new(value);
+    public static KiloVoltAmpere KVA(this double value) => new(value);
+
     public static VoltAmpereReactive VAr(this int value) => new(value);
     public static VoltAmpereReactive VAr(this double value) => new (value);
+
+    public static KiloVoltAmpereReactive KVAr(this int value) => new(value);
+    public static KiloVoltAmpereReactive KVAr(this double value) => new (value);
     public static VoltAmpereReactive ToVAr(this ReactivePower value) => value.ToVAr();
  
  

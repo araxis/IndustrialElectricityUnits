@@ -12,7 +12,7 @@
     <Description>set of electricity parameters such as Power, Current, Reactive power, Cos𝛟, ..., and related operators.</Description>
     <PackageId>Arax.Electricity.Parameters</PackageId>
     <PackageIcon>logo_Arax.png</PackageIcon>
-    <Version>$(VersionPrefix)1.0.4</Version>
+    <Version>$(VersionPrefix)1.0.6</Version>
   </PropertyGroup>
 
 
