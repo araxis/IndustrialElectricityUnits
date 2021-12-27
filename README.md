@@ -162,7 +162,6 @@ Or via the .NET Core command line interface:
 ### Power System
 ```csharp
  var singlePhase = PowerSystem.SinglePhase;
- var twoPhase = PowerSystem.TwoPhase;
  var threePhase = PowerSystem.ThreePhase;
  //properties
  int value = singlePhase.Value; // 0
